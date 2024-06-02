@@ -1,0 +1,38 @@
+.bodyParts {
+  border-color: black;
+  fill: #72b8fc;
+  cursor: pointer;
+}
+area.bodyParts {
+  fill: black;
+  stroke: gray; /* Replace with none if you like*/
+  stroke-width: 4;
+  cursor: pointer;
+}
+
+area.bodyParts:hover {
+  stroke: black;
+}
+/* .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+} */
+
+.col-xs-12 {
+  width: 80%;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px 10px;
+  text-decoration: none;
+  height: max-content;
+}
