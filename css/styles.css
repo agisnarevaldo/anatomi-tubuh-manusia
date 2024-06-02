@@ -1,16 +1,42 @@
-.bodyParts{
-    border-color: black;
-    fill: #72B8FC;cursor: pointer;
-}
-area.bodyParts
-{
-    fill: black;
-    stroke:gray; /* Replace with none if you like*/
-    stroke-width: 4;
-    cursor: pointer;
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  /* background: url(../img/bg.png) no-repeat center center fixed; */
+  /* background-color: #f0f8ff; */
 }
 
-area.bodyParts:hover
-{
- stroke:black;
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+#app {
+  text-align: center;
+}
+
+button,
+a {
+  margin: 10px;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(253, 55, 147);
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(253, 55, 147, 0.8);
 }
