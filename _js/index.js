@@ -26,6 +26,7 @@ $(document).ready(function () {
                 }
                 // $('#selections').html( selectedItems.length);
                 $('#selections').html(selectedItems.length > 0 ? "<b>Bagian Tubuh yang Dipilih: </b>" + selectedItems.toString().replace(new RegExp('_', 'g'), " ").replace(new RegExp(',', 'g'), ", ") : "<b>Silahkan Pilih Bagian Tubuh</b>");
+                alert("Ini Adalah: " + e.key);
 
             },
             showToolTip: true,
@@ -132,3 +133,9 @@ $(document).ready(function () {
 
         });
 });
+
+// Menambahkan fungsi reset untuk menghapus selected items
+function reset() {
+    selectedItems = [];
+    $('#selections').html("<b>Silahkan Pilih Bagian Tubuh</b>");
+}
